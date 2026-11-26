@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore fragrance through mood with Scent Mood.">
+    <meta name="theme-color" content="#f3eff0">
+    <title>Scent Mood — Find your scent</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body id="top">
+    <a class="skip-link button" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="site-nav section__inner" aria-label="Main navigation">
+        <a class="wordmark site-nav__brand" href="#top" aria-label="Scent Mood home">Scent Mood</a>
+        <a class="nav-label site-nav__discover" href="#moods"><span>Discover</span></a>
+        <a class="nav-label site-nav__shortlist" href="#shortlist"><span>Shortlist</span></a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__landscape" aria-hidden="true">
+          <img src="./assets/misty-pond.webp" alt="" fetchpriority="high">
+        </div>
+        <div class="hero__oval">
+          <h1 id="hero-title">Find your<br>scent</h1>
+          <a class="text-link hero__link" href="#moods">Explore scents</a>
+        </div>
+        <img class="hero__iris" src="./assets/iris-sprig.webp" width="700" height="352" alt="">
+      </section>
+
+      <section class="section mood-section" id="moods" aria-labelledby="moods-title">
+        <div class="section__inner">
+          <h2 class="section__title" id="moods-title">Explore by mood</h2>
+          <div class="mood-grid">
+            <details class="mood-tile">
+              <summary class="mood-tile__summary">
+                <img class="mood-tile__image" src="./assets/fresh.webp" width="920" height="503" alt="" loading="lazy">
+                <span class="mood-tile__label">Fresh</span>
+              </summary>
+              <p class="mood-tile__notes">Airy greens, bright citrus, and cool water notes.</p>
+            </details>
+            <details class="mood-tile">
+              <summary class="mood-tile__summary">
+                <img class="mood-tile__image" src="./assets/soft.webp" width="920" height="503" alt="" loading="lazy">
+                <span class="mood-tile__label">Soft</span>
+              </summary>
+              <p class="mood-tile__notes">Powdery iris, gentle florals, and sheer musk.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shortlist" id="shortlist" aria-labelledby="shortlist-title">
+        <div class="section__inner">
+          <h2 class="section__title" id="shortlist-title">Shortlist</h2>
+          <p>Saved fragrances will appear here.</p>
+          <a class="button button--secondary" href="#moods">Explore by mood</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="lace-trim lace-trim--overlap" aria-hidden="true"></div>
+      <a class="wordmark site-footer__brand" href="#top" aria-label="Scent Mood home">Scent Mood</a>
+    </footer>
+  </body>
+</html>

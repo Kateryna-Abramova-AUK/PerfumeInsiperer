@@ -1,0 +1,34 @@
+name: Publish catalog snapshot
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: catalog-publishing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and normalize
+        run: python etl/catalog.py --output "$RUNNER_TEMP/catalog.json"
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ vars.AWS_REGION }}
+          role-to-assume: ${{ vars.CATALOG_PUBLISH_ROLE_ARN }}
+      - name: Publish versioned snapshot
+        env:
+          CATALOG_BUCKET: ${{ vars.CATALOG_BUCKET }}
+        run: |
+          test -n "$CATALOG_BUCKET"
+          aws s3api put-object --bucket "$CATALOG_BUCKET" --key catalog/latest.json \
+            --body "$RUNNER_TEMP/catalog.json" --content-type application/json

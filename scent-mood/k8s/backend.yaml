@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  selector:
+    app: scent-mood-backend
+  ports:
+    - port: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scent-mood-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scent-mood-backend
+  template:
+    metadata:
+      labels:
+        app: scent-mood-backend
+    spec:
+      initContainers:
+        - name: wait-for-database
+          image: postgres:17-alpine
+          envFrom:
+            - secretRef:
+                name: scent-mood-db
+          command: [sh, -c, 'until pg_isready -h database -U "$POSTGRES_USER" -d "$POSTGRES_DB"; do sleep 2; done']
+      containers:
+        - name: api
+          image: scent-mood-backend:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: scent-mood-db
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: postgres
+            - name: DATABASE_URL
+              value: jdbc:postgresql://database:5432/$(POSTGRES_DB)
+          startupProbe:
+            httpGet:
+              path: /api/health
+              port: 8080
+            periodSeconds: 3
+            failureThreshold: 40
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 8080
+          livenessProbe:
+            tcpSocket:
+              port: 8080

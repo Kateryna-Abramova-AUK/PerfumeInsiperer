@@ -1,0 +1,26 @@
+services:
+  database:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-scent_mood}
+      POSTGRES_USER: ${POSTGRES_USER:-scent_mood}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-scent_mood}
+    volumes:
+      - scent_mood_database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -h 127.0.0.1 -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 3s
+      timeout: 4s
+      retries: 20
+  backend:
+    environment:
+      SPRING_PROFILES_ACTIVE: postgres
+      DATABASE_URL: jdbc:postgresql://database:5432/${POSTGRES_DB:-scent_mood}
+      POSTGRES_USER: ${POSTGRES_USER:-scent_mood}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-scent_mood}
+    depends_on:
+      database:
+        condition: service_healthy
+
+volumes:
+  scent_mood_database:

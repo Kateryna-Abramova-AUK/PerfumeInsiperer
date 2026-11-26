@@ -1,0 +1,21 @@
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+
+    location /api/ {
+        resolver ${NGINX_LOCAL_RESOLVERS} valid=5s;
+        set $api_upstream ${API_UPSTREAM};
+        proxy_pass $api_upstream;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /assets/ {
+        try_files $uri =404;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

@@ -1,0 +1,757 @@
+[
+  {
+    "id": "cape-heartache",
+    "name": "Cape Heartache",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Douglas Fir",
+      "Pine Resin",
+      "Western Hemlock",
+      "Vanilla Leaf",
+      "Strawberry"
+    ],
+    "accords": [
+      "Old Growth",
+      "Mountain Fog"
+    ],
+    "moods": [
+      "forest-like"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/cape-heartache"
+  },
+  {
+    "id": "memoirs-of-a-trespasser",
+    "name": "Memoirs of a Trespasser",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Madagascar Vanilla",
+      "Guaiacwood",
+      "Myrrh",
+      "Benzoin Resin",
+      "Ambrette Seeds"
+    ],
+    "accords": [
+      "Oak Barrels"
+    ],
+    "moods": [
+      "cozy"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/memoirs-of-a-trespasser"
+  },
+  {
+    "id": "saint-julep",
+    "name": "Saint Julep",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Sweet Mint",
+      "Tangerine",
+      "Southern Magnolia",
+      "Bourbon",
+      "Sugarcube"
+    ],
+    "accords": [],
+    "moods": [
+      "joyful"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/saint-julep"
+  },
+  {
+    "id": "falling-into-the-sea",
+    "name": "Falling into the Sea",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Lemon",
+      "Bergamot",
+      "Grapefruit",
+      "Lychee"
+    ],
+    "accords": [
+      "Tropical Flowers",
+      "Warm Sand"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Summer"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/falling-into-the-sea"
+  },
+  {
+    "id": "fox-in-the-flowerbed",
+    "name": "Fox in the Flowerbed",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Jasmine",
+      "Tulips",
+      "Frankincense",
+      "Wildflower Honey",
+      "Pink Peppercorns",
+      "Silver Thistle"
+    ],
+    "accords": [
+      "Alpine Air"
+    ],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/fox-in-the-flowerbed"
+  },
+  {
+    "id": "a-city-on-fire",
+    "name": "A City on Fire",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Cade Oil",
+      "Spikenard",
+      "Cardamom",
+      "Clearwood",
+      "Dark Berries",
+      "Labdanum"
+    ],
+    "accords": [
+      "Burnt Match"
+    ],
+    "moods": [
+      "mysterious"
+    ],
+    "family": "Amber / Spiced",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/a-city-on-fire"
+  },
+  {
+    "id": "sundrunk",
+    "name": "Sundrunk",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Neroli",
+      "Rhubarb",
+      "Honeysuckle",
+      "Rose Water",
+      "Orange Zest"
+    ],
+    "accords": [
+      "First Kiss"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/sundrunk"
+  },
+  {
+    "id": "yesterday-haze",
+    "name": "Yesterday Haze",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Fig",
+      "Iris",
+      "Cream",
+      "Tonka",
+      "Tree Bark",
+      "Walnut Bitters"
+    ],
+    "accords": [
+      "Orchard Dust"
+    ],
+    "moods": [
+      "cozy"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Autumn"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/yesterday-haze"
+  },
+  {
+    "id": "in-love-with-everything",
+    "name": "In Love with Everything",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Raspberry",
+      "Citrus Pulp",
+      "Coconut Palm Sugar",
+      "Sandalwood"
+    ],
+    "accords": [
+      "Tropical Punch",
+      "Stardust"
+    ],
+    "moods": [
+      "joyful",
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Summer"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/in-love-with-everything"
+  },
+  {
+    "id": "slow-explosions",
+    "name": "Slow Explosions",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Saffron",
+      "Rose Absolute",
+      "Apple",
+      "Benzoin",
+      "Cashmeran"
+    ],
+    "accords": [
+      "Leather"
+    ],
+    "moods": [
+      "mysterious"
+    ],
+    "family": "Amber / Spiced",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/slow-explosions"
+  },
+  {
+    "id": "the-soft-lawn",
+    "name": "The Soft Lawn",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Linden Blossom",
+      "Grapefruit",
+      "Laurel & Ivy Leaves",
+      "Vetiver",
+      "Oakmoss"
+    ],
+    "accords": [
+      "Fresh Tennis Balls"
+    ],
+    "moods": [
+      "forest-like"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/the-soft-lawn"
+  },
+  {
+    "id": "the-language-of-glaciers",
+    "name": "The Language of Glaciers",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "White Pine",
+      "Lilac",
+      "Cashmere",
+      "Juniper",
+      "Forget Me Not",
+      "Blue Bugle"
+    ],
+    "accords": [
+      "Virgin Snowfall"
+    ],
+    "moods": [
+      "forest-like",
+      "angelic"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Winter"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/the-language-of-glaciers"
+  },
+  {
+    "id": "a-whiff-of-waffle-cone",
+    "name": "A Whiff of Waffle Cone",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Vanilla",
+      "Salted Caramel",
+      "Saigon Cinnamon",
+      "Heavy Cream",
+      "Sandalwood",
+      "Orgeat"
+    ],
+    "accords": [
+      "Scoop Shop"
+    ],
+    "moods": [
+      "candy-like",
+      "cozy"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://imaginaryauthors.com/products/a-whiff-of-wafflecone"
+  },
+  {
+    "id": "whipped-cherry",
+    "name": "Whipped Cherry",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Wild Cherry",
+      "Pineapple",
+      "Coconut Water",
+      "Orange Zest",
+      "Praline",
+      "Vanilla Cream",
+      "Cedarwood",
+      "Musk",
+      "Sandalwood"
+    ],
+    "accords": [],
+    "moods": [
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/clean-reserve-whipped-cherry"
+  },
+  {
+    "id": "sparkling-sugar",
+    "name": "Sparkling Sugar",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Cassis Berries",
+      "Ambrette Seeds",
+      "Peach Nectar",
+      "Jasmine Petals",
+      "Pink Sugar",
+      "White Musk",
+      "Tonka Bean",
+      "Blond Woods"
+    ],
+    "accords": [],
+    "moods": [
+      "joyful",
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/clean-reserve-sparkling-sugar"
+  },
+  {
+    "id": "rain",
+    "name": "Rain",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Bergamot",
+      "Chilled Cucumber",
+      "Waterlily",
+      "Cyclamen",
+      "Muguet",
+      "Patchouli",
+      "Rainforest Vetiver",
+      "Clean Musks"
+    ],
+    "accords": [
+      "Dewy White Flowers"
+    ],
+    "moods": [],
+    "family": "Fresh",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/clean-reserve-rain"
+  },
+  {
+    "id": "skin",
+    "name": "Skin",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Honeysuckle",
+      "Bergamot",
+      "Orange Blossom",
+      "Madagascar Vanilla",
+      "Orchid",
+      "Peony",
+      "Praline",
+      "White Cedarwood",
+      "Musk"
+    ],
+    "accords": [],
+    "moods": [
+      "cozy",
+      "angelic"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/clean-reserve-skin"
+  },
+  {
+    "id": "aqua-neroli",
+    "name": "Aqua Neroli",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Bergamot",
+      "Mandarin",
+      "Sicilian Orange",
+      "Jasmine",
+      "Neroli",
+      "Orange Blossom",
+      "Acqua Musk",
+      "Amber",
+      "Ambrette"
+    ],
+    "accords": [],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/clean-reserve-aqua-neroli"
+  },
+  {
+    "id": "warm-cotton",
+    "name": "Warm Cotton",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Aldehydes",
+      "Ginger",
+      "Mint",
+      "Pepper",
+      "Musk",
+      "Incense",
+      "Vetiver"
+    ],
+    "accords": [
+      "Water Accord",
+      "Floral Accord"
+    ],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://www.cleanbeauty.com/collections/hot-on-tiktok/products/clean-reserve-warm-cotton"
+  },
+  {
+    "id": "caramel-swirl",
+    "name": "Caramel Swirl",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Caramelized Coconut",
+      "Lemon",
+      "Italian Tangerine",
+      "White Chocolate",
+      "Whipped Cream",
+      "Cloud Musk",
+      "Sandalwood"
+    ],
+    "accords": [],
+    "moods": [
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://www.cleanbeauty.com/products/caramel-swirl-30-ml"
+  },
+  {
+    "id": "musc-invisible",
+    "name": "Musc Invisible",
+    "brand": "Juliette Has a Gun",
+    "notes": [
+      "Jasmine Absolute",
+      "Cotton Flower",
+      "White Musk"
+    ],
+    "accords": [],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://us.juliettehasagun.com/collections/classic/products/musc-invisible-1"
+  },
+  {
+    "id": "vanilla-vibes",
+    "name": "Vanilla Vibes",
+    "brand": "Juliette Has a Gun",
+    "notes": [
+      "Sea Salt",
+      "Vanilla",
+      "Orchid Absolute",
+      "Sandalwood",
+      "Tonka Bean"
+    ],
+    "accords": [],
+    "moods": [
+      "cozy"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Summer",
+      "Autumn"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://us.juliettehasagun.com/collections/meilleures-ventes/products/vanilla-vibes"
+  },
+  {
+    "id": "magnolia-bliss",
+    "name": "Magnolia Bliss",
+    "brand": "Juliette Has a Gun",
+    "notes": [
+      "Bergamot",
+      "Magnolia Essence",
+      "Mirabelle Plum",
+      "Ambroxan Musks"
+    ],
+    "accords": [],
+    "moods": [
+      "joyful"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://us.juliettehasagun.com/products/magnolia-bliss"
+  },
+  {
+    "id": "lost-cherry",
+    "name": "Lost Cherry",
+    "brand": "Tom Ford",
+    "notes": [
+      "Black Cherry",
+      "Bitter Almond",
+      "Rose Absolute",
+      "Peru Balsam",
+      "Tonka Bean"
+    ],
+    "accords": [
+      "Cherry Liqueur"
+    ],
+    "moods": [
+      "mysterious",
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "source_url": "https://www.tomfordbeauty.com/products/lost-cherry-eau-de-parfum?dwvar_T6-LOSTCHERRY_color=OC"
+  },
+  {
+    "id": "lazy-sunday-morning",
+    "name": "Lazy Sunday Morning",
+    "brand": "Maison Margiela",
+    "notes": [
+      "Lily of the Valley",
+      "White Musk",
+      "Iris"
+    ],
+    "accords": [],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day"
+    ],
+    "source_url": "https://www.maisonmargiela-fragrances.us/replica-memory-box/3614273668811.html"
+  },
+  {
+    "id": "by-the-fireplace",
+    "name": "By the Fireplace",
+    "brand": "Maison Margiela",
+    "notes": [
+      "Red Berries",
+      "Clove Oil",
+      "Cashmeran"
+    ],
+    "accords": [
+      "Chestnut Accord",
+      "Vanilla Accord"
+    ],
+    "moods": [
+      "cozy"
+    ],
+    "family": "Amber / Spiced",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "source_url": "https://www.maisonmargiela-fragrances.us/gifts-and-sets/replica-deluxe-mini-fragrance-set/MM181.html"
+  },
+  {
+    "id": "autumn-vibes",
+    "name": "Autumn Vibes",
+    "brand": "Maison Margiela",
+    "notes": [
+      "Cedarwood",
+      "Pink Pepper",
+      "Cardamom"
+    ],
+    "accords": [
+      "Moss Accord"
+    ],
+    "moods": [
+      "forest-like"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Autumn"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://www.maisonmargiela-fragrances.us/replica-memory-box/3614273668811.html"
+  },
+  {
+    "id": "tam-dao-edp",
+    "name": "Tam Dao Eau de Parfum",
+    "brand": "Diptyque",
+    "notes": [
+      "Sandalwood",
+      "Cedar",
+      "Cypress",
+      "Coriander"
+    ],
+    "accords": [],
+    "moods": [
+      "forest-like"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "source_url": "https://diptyqueparis.com/en-wf/products/eau-de-parfum-tam-dao-tamdaop75cv1"
+  }
+]

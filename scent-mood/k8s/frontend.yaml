@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: scent-mood-frontend
+spec:
+  selector:
+    app: scent-mood-frontend
+  ports:
+    - port: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scent-mood-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scent-mood-frontend
+  template:
+    metadata:
+      labels:
+        app: scent-mood-frontend
+    spec:
+      containers:
+        - name: web
+          image: scent-mood-frontend:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: API_UPSTREAM
+              value: http://backend.$(POD_NAMESPACE).svc.cluster.local:8080
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 80

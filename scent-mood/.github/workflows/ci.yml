@@ -1,0 +1,55 @@
+name: CI
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  application:
+    runs-on: ubuntu-latest
+    env:
+      COMPOSE_FILE: docker-compose.yml:docker-compose.postgres.yml
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: e2e/package-lock.json
+      - name: Validate catalog
+        run: python etl/catalog.py
+      - name: Build and start application
+        run: docker compose up --build --wait
+      - name: Install browser tests
+        working-directory: e2e
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Test application
+        working-directory: e2e
+        run: npm test
+      - name: Verify PostgreSQL shortlist survives backend replacement
+        run: |
+          jar=$(mktemp)
+          trap 'rm -f "$jar"' EXIT
+          api=http://127.0.0.1:15173/api
+          curl -fsS -c "$jar" "$api/shortlist"
+          curl -fsS -b "$jar" -X PUT "$api/shortlist/lost-cherry"
+          docker compose up --force-recreate --no-deps --wait backend
+          curl -fsS --retry 5 --retry-delay 1 -b "$jar" "$api/shortlist" | grep -F '"id":"lost-cherry"'
+      - name: Capture failure logs
+        if: failure()
+        run: docker compose logs --no-color
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-results
+          path: e2e/test-results/
+      - name: Stop application
+        if: always()
+        run: docker compose down

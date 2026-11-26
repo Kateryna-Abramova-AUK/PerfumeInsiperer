@@ -1,0 +1,251 @@
+[
+  {
+    "id": "cape-heartache",
+    "name": "Cape Heartache",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Douglas Fir",
+      "Pine Resin",
+      "Western Hemlock",
+      "Vanilla Leaf",
+      "Strawberry"
+    ],
+    "accords": [
+      "Old Growth",
+      "Mountain Fog"
+    ],
+    "moods": [
+      "forest-like"
+    ],
+    "family": "Woody",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "sourceUrl": "https://imaginaryauthors.com/products/cape-heartache"
+  },
+  {
+    "id": "falling-into-the-sea",
+    "name": "Falling into the Sea",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Lemon",
+      "Bergamot",
+      "Grapefruit",
+      "Lychee"
+    ],
+    "accords": [
+      "Tropical Flowers",
+      "Warm Sand"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Summer"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "sourceUrl": "https://imaginaryauthors.com/products/falling-into-the-sea"
+  },
+  {
+    "id": "a-city-on-fire",
+    "name": "A City on Fire",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Cade Oil",
+      "Spikenard",
+      "Cardamom",
+      "Clearwood",
+      "Dark Berries",
+      "Labdanum"
+    ],
+    "accords": [
+      "Burnt Match"
+    ],
+    "moods": [
+      "mysterious"
+    ],
+    "family": "Amber / Spiced",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "sourceUrl": "https://imaginaryauthors.com/products/a-city-on-fire"
+  },
+  {
+    "id": "slow-explosions",
+    "name": "Slow Explosions",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Saffron",
+      "Rose Absolute",
+      "Apple",
+      "Benzoin",
+      "Cashmeran"
+    ],
+    "accords": [
+      "Leather"
+    ],
+    "moods": [
+      "mysterious"
+    ],
+    "family": "Amber / Spiced",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "sourceUrl": "https://imaginaryauthors.com/products/slow-explosions"
+  },
+  {
+    "id": "a-whiff-of-waffle-cone",
+    "name": "A Whiff of Waffle Cone",
+    "brand": "Imaginary Authors",
+    "notes": [
+      "Vanilla",
+      "Salted Caramel",
+      "Saigon Cinnamon",
+      "Heavy Cream",
+      "Sandalwood",
+      "Orgeat"
+    ],
+    "accords": [
+      "Scoop Shop"
+    ],
+    "moods": [
+      "candy-like",
+      "cozy"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "sourceUrl": "https://imaginaryauthors.com/products/a-whiff-of-wafflecone"
+  },
+  {
+    "id": "whipped-cherry",
+    "name": "Whipped Cherry",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Wild Cherry",
+      "Pineapple",
+      "Coconut Water",
+      "Orange Zest",
+      "Praline",
+      "Vanilla Cream",
+      "Cedarwood",
+      "Musk",
+      "Sandalwood"
+    ],
+    "accords": [],
+    "moods": [
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day",
+      "Evening"
+    ],
+    "sourceUrl": "https://www.cleanbeauty.com/products/clean-reserve-whipped-cherry"
+  },
+  {
+    "id": "warm-cotton",
+    "name": "Warm Cotton",
+    "brand": "Clean Reserve",
+    "notes": [
+      "Aldehydes",
+      "Ginger",
+      "Mint",
+      "Pepper",
+      "Musk",
+      "Incense",
+      "Vetiver"
+    ],
+    "accords": [
+      "Water Accord",
+      "Floral Accord"
+    ],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Fresh",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day"
+    ],
+    "sourceUrl": "https://www.cleanbeauty.com/collections/hot-on-tiktok/products/clean-reserve-warm-cotton"
+  },
+  {
+    "id": "musc-invisible",
+    "name": "Musc Invisible",
+    "brand": "Juliette Has a Gun",
+    "notes": [
+      "Jasmine Absolute",
+      "Cotton Flower",
+      "White Musk"
+    ],
+    "accords": [],
+    "moods": [
+      "angelic"
+    ],
+    "family": "Floral",
+    "seasons": [
+      "Year-round"
+    ],
+    "times": [
+      "Day"
+    ],
+    "sourceUrl": "https://us.juliettehasagun.com/collections/classic/products/musc-invisible-1"
+  },
+  {
+    "id": "lost-cherry",
+    "name": "Lost Cherry",
+    "brand": "Tom Ford",
+    "notes": [
+      "Black Cherry",
+      "Bitter Almond",
+      "Rose Absolute",
+      "Peru Balsam",
+      "Tonka Bean"
+    ],
+    "accords": [
+      "Cherry Liqueur"
+    ],
+    "moods": [
+      "mysterious",
+      "candy-like"
+    ],
+    "family": "Gourmand",
+    "seasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "times": [
+      "Evening"
+    ],
+    "sourceUrl": "https://www.tomfordbeauty.com/products/lost-cherry-eau-de-parfum?dwvar_T6-LOSTCHERRY_color=OC"
+  }
+]
