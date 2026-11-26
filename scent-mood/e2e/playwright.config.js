@@ -8,5 +8,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
   retries: process.env.CI ? 1 : 0,
-  reporter: process.env.CI ? 'github' : 'list',
+  reporter: process.env.CI
+    ? [['github'], ['junit', { outputFile: 'test-results/junit.xml' }], ['html', { open: 'never' }]]
+    : 'list',
 })

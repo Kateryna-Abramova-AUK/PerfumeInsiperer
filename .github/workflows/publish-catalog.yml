@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate and normalize
+        working-directory: scent-mood
         run: python etl/catalog.py --output "$RUNNER_TEMP/catalog.json"
       - uses: aws-actions/configure-aws-credentials@v4
         with:
