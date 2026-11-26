@@ -21,12 +21,12 @@ services:
       context: .
       dockerfile: frontend/Dockerfile
     ports:
-      - "127.0.0.1:${FRONTEND_PORT:-15173}:80"
+      - "127.0.0.1:${FRONTEND_PORT:-15173}:8080"
     depends_on:
       backend:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/api/health"]
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/api/health"]
       interval: 3s
       timeout: 4s
       retries: 20

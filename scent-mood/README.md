@@ -16,7 +16,7 @@ Compose starts the frontend and backend. The API is at <http://localhost:18080/a
 
 ## Development and tests
 
-- `frontend/` contains the React and Vite site. Run `npm ci` and `npm run dev` there. Vite proxies `/api` to port 8080 for a locally started Spring Boot process. Set `API_PROXY_TARGET=http://localhost:18080` to use the Compose backend.
+- `frontend/` contains the React and Vite site. Run `npm ci`, then `npm run lint` or `npm run dev` there. Vite proxies `/api` to port 8080 for a locally started Spring Boot process. Set `API_PROXY_TARGET=http://localhost:18080` to use the Compose backend.
 - `backend/` contains the Java 21 and Spring Boot API. Run `mvn test` there for the ranking and filtering tests. The backend Docker build also runs these tests.
 - `e2e/` contains browser tests that use the real API. From that directory, run `npm ci`, `npx playwright install chromium`, then `npm test` with Compose running. Set `SCENT_MOOD_URL` if you changed the frontend port.
 - The illustrated landing page uses local WebP art and bundled typefaces. The font licenses are in `frontend/public/assets/`.
@@ -89,7 +89,9 @@ kubectl --context scent-mood-demo -n scent-mood port-forward service/scent-mood-
 
 ## Release workflows and S3
 
-CI validates the catalog, builds the application, runs the browser suite against PostgreSQL, and checks that a save survives backend container replacement. The image workflow publishes container images to GitHub Container Registry on a version tag or manual run.
+The Git repository's root workflow lints the frontend and runs Maven tests before building the Compose stack and running Playwright against PostgreSQL. It checks that the Nginx master is unprivileged, that the app and API respond through the frontend, and that a saved fragrance survives backend replacement. Maven reports, Playwright HTML and JUnit reports, and failure traces are available as workflow artifacts.
+
+Successful pushes to `main` publish both images to GitHub Container Registry under `sha-<full-commit-sha>` tags. The workflow reuses a commit tag it can already resolve and records both image digests in the job summaries. The Nginx container listens on port 8080 as UID 101. Compose keeps the existing host port, and Kubernetes keeps Service port 80.
 
 `infra/terraform` defines a private, versioned S3 bucket with encryption and a TLS-only bucket policy. Supply `aws_region` and a globally unique `catalog_bucket_name` when planning. After provisioning, attach the output publisher policy to a GitHub OIDC role whose trust is limited to this repository's `catalog-publishing` environment. In that GitHub environment set `AWS_REGION`, `CATALOG_BUCKET`, and `CATALOG_PUBLISH_ROLE_ARN`.
 

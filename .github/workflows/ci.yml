@@ -162,4 +162,4 @@ jobs:
           DIGEST: ${{ steps.image.outputs.digest || steps.publish.outputs.digest }}
         run: |
           [[ "$DIGEST" =~ ^sha256:[0-9a-f]{64}$ ]]
-          printf '\x60%s@%s\x60\n' "$IMAGE" "$DIGEST" >> "$GITHUB_STEP_SUMMARY"
+          printf '%s@%s\n' "$IMAGE" "$DIGEST" >> "$GITHUB_STEP_SUMMARY"
